@@ -1,0 +1,28 @@
+<div class="page-header text-center">
+    <h1><span class="fa fa-anchor"></span> Profile Page</h1>
+    <a logout href="/logout" class="btn btn-default btn-sm">Logout</a>
+</div>
+
+<div class="row">
+
+    <!-- LOCAL INFORMATION -->
+    <div class="col-sm-12">
+        <div class="well">
+            <h3><span class="fa fa-user"></span> Local</h3>
+
+            <container ng-show="user.local.email">
+                <p>
+                    <strong>id</strong>: {{ user._id }}<br>
+                    <strong>email</strong>: {{ user.local.email }}<br>
+                </p>
+                
+            </container>
+
+        </div>
+    </div>
+</div>
+
+<div class="text-center">
+    <p>Angular conversion by <a href="http://brandonmcquarie.com/">Brandon</a> and <a href="http://chrisheninger.com/">Chris</a>. Visit the <a href="https://github.com/brandonmcquarie/easy-node-authentication-angular">Github Repo</a>.</p>
+    <p>Original Node/Express demo by <a href="http://scotch.io">Scotch</a>. Visit the <a href="http://scotch.io/tutorials/javascript/easy-node-authentication-setup-and-local">tutorial</a>.</p>
+</div>
